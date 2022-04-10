@@ -20,6 +20,7 @@ installation:
 - clone this repository and choose the version you want to use
 - (only for bash and python script):
 if you chose bash and python copy the scripts to /usr/local/bin or change the file path on run-battery-notify line 15 to where ever you copied battery-notify.py to
+- chmod +x script(s)
 - add this to your crontab -e 
 
 example on how my crontab -e looks:
