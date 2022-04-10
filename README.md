@@ -5,7 +5,7 @@ the only reason this file uses python as well is because my bash scripting skill
 
 there are 2 versions of this that can be selected:
   with python and bash (battery-notify.py & run-battery-notify):
-   calculates the battery health from the energy_full_design and enerfy_full files and decides how the low and critical amounts based on that (15 = Low 5 =         critical).
+   calculates the battery health from the energy_full_design and enerfy_full files and decides how the low and critical amounts based on that (15=Low 5=        critical).
   
   bash (bash-only-script):
     only sends notification however only uses bash to do this so it i couldnt make it check for battery health but unlike the other version python is not           required and works from a single file.
