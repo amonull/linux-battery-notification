@@ -1,5 +1,7 @@
 # linux-battery-notification
 
+this is my first proper attempt at trying to make a git repo and working with both python and bash at the same time so if someting doesnt work i wont be of much help.
+
 used to send notification when battery is low, critical or full. as this script does use cronie to work it will not send a message the instant battery percentage falls to or below the low/critical percentage and will take a full minute.
 the only reason this file uses python as well is because my bash scripting skills were not good enough to make it check for battery health but it should be possible to do so if you do wish to do it.
 
@@ -17,7 +19,8 @@ depends:
 - acpi
 
 installation:
-- clone this repository and choose the version you want to use
+- git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
+- cp script(s) /path/you/want
 - (only for bash and python script):
 if you chose bash and python copy the scripts to /usr/local/bin or change the file path on run-battery-notify line 15 to where ever you copied battery-notify.py to
 - chmod +x script(s)
