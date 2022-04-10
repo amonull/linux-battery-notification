@@ -1,6 +1,6 @@
 # linux-battery-notification
 
-used to send notification when battery is low, critical or full. as this script does use cronie to work it will not send a message the instant battery percentage falls to or below the low/critical percentage and will take a full minute (until time is **:*0:** (format H:M:S)).
+used to send notification when battery is low, critical or full. as this script does use cronie to work it will not send a message the instant battery percentage falls to or below the low/critical percentage and will take a full minute.
 the only reason this file uses python as well is because my bash scripting skills were not good enough to make it check for battery health but it should be possible to do so if you do wish to do it.
 
 there are 2 versions of this that can be selected:
