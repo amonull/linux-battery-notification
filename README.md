@@ -1,9 +1,6 @@
 # linux-battery-notification
 
-this is my first proper attempt at trying to make a git repo and working with both python and bash at the same time so if someting doesnt work i wont be of much help.
-
-used to send notification when battery is low, critical or full. as this script does use cronie to work it will not send a message the instant battery percentage falls to or below the low/critical percentage and will take a full minute.
-the only reason this file uses python as well is because my bash scripting skills were not good enough to make it check for battery health but it should be possible to do so if you do wish to do it.
+this is a python only script that uses notify-send to send user notifications when their battery is too low(15%) or critical(5%) 
 
 depends:
 - python3
@@ -22,9 +19,10 @@ example on how my crontab -e looks:
 ```* * * * * /usr/bin/python3 /path/to/file```
 
 
-
 IMPORTANT
 
 to use GUI applications from cronie you may need to add
 
 ```DISPLAY=:0```
+
+so far this script sends user notifications continusly it is not inteneded to be that way i just havent figured out how to not do it that way.
