@@ -24,4 +24,4 @@ to use GUI applications from cronie you may need to add
 
 ```DISPLAY=:0```
 
-so far this script sends user notifications continuously it is not inteneded to be that way i just havent figured out how to not do it that way.
+so far this script sends user notifications continuously (when battery levels are low or critical) it is not inteneded to be that way i just havent figured out how to not do it that way.
