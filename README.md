@@ -17,6 +17,8 @@ installation:
 - chmod +x /path/to/script
 - add this to your crontab -e 
 
+```git clone https://github.com/s01k/battery-notify-linux```
+
 example on how my crontab -e looks:
 '''* * * * * /usr/bin/python3 /path/to/file'''
 
