@@ -22,6 +22,7 @@ example on how my crontab -e looks:
 ```* * * * * /usr/bin/python3 /path/to/file```
 
 
+
 IMPORTANT
 
 to use GUI applications from cronie you may need to add
