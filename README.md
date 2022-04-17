@@ -18,8 +18,8 @@ installation:
 - add this to your crontab -e 
 
 example on how my crontab -e looks:
-* * * * * /usr/bin/python3 /path/to/file
+'''* * * * * /usr/bin/python3 /path/to/file'''
 
 IMPORTANT
 to use GUI applications from cronie you may need to add
-DISPLAY=:0
+'''DISPLAY=:0'''
