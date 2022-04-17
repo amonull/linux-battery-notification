@@ -15,7 +15,7 @@ with open(f"{main_path}/status") as status:
 
 # POLYBAR BATTERY MODULE ROUNDS SO MOST VARIABLES ARE ALSO ROUNDED
 BATTERY_LEVEL = round((battery_level / energy_full) *100)
-# BATTEYR_MAX needs to be int. or it cant reach to higher percentages (battery cant reach 100 even if life at 99.9%)
+# BATTEYR_MAX needs to be int. or it cant reach to higher percentages (battery cant reach 100 even if life at 99.9% as round makes 99.9 to 100 but int makes 99.9 just 99)
 BATTERY_MAX = int((energy_full / energy_full_design) *100)
 
 LOW_BATTERY = round((15/100) *BATTERY_MAX)
