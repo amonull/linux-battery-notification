@@ -18,6 +18,7 @@ BATTERY_LEVEL = round((battery_level / energy_full) *100)
 # BATTEYR_MAX needs to be int. or it cant reach to higher percentages (battery cant reach 100 even if life at 99.9% as round makes 99.9 to 100 but int makes 99.9 just 99)
 BATTERY_MAX = int((energy_full / energy_full_design) *100)
 
+# to change low/critical being 15/5 change the first values
 LOW_BATTERY = round((15/100) *BATTERY_MAX)
 CRITICAL_BATTERY = round((5/100) *BATTERY_MAX)
 
