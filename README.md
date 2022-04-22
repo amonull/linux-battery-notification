@@ -9,7 +9,7 @@ depends:
 
 installation:
 - git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
-- cp script /path/you/want
+- cp script /path/to/script
 - chmod +x /path/to/script
 - add this to your crontab -e 
 
@@ -23,5 +23,3 @@ IMPORTANT
 to use GUI applications from cronie you may need to add
 
 ```DISPLAY=:0```
-
-so far this script sends user notifications continuously (when battery levels are low or critical) it is not inteneded to be that way i just havent figured out how to not do it that way.
