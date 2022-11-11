@@ -58,7 +58,7 @@ def main():
             opened_tmp_battery_state_status.truncate()
             opened_tmp_battery_state_status.write("2")
     else:
-        # i perfer continous notifications when bat is full
+        # i perfer continuous notifications when bat is full
         if (BATTERY_LEVEL == BATTERY_MAX): #and (tmp_battery_state_status != 1):
             subprocess.run(["/usr/bin/notify-send", "-i", "/usr/share/icons/Papirus/16x16/status/package-install.svg", "-t", "15000", "-u", "Low", "Full Battery", f"Battery Level Is {BATTERY_LEVEL+DMG_BAT_DIFF}%"])
             opened_tmp_battery_state_status.truncate()
