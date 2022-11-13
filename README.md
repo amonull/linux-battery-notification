@@ -8,6 +8,7 @@ this script uses rounding as it is meant to be used together with the polybar ba
 - cronie
 
 if using notify2 version:
+
 pip install notify2
 
 **installation:**
