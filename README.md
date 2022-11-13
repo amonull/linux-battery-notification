@@ -1,7 +1,7 @@
 # linux-battery-notification
 if you want to change the low battery or critical battery levels LOW/CIRITICAL_BATTERY and change the 15/5 to your desired level. 
 
-notify2 uses the notif2 library while the other file uses subprocess to send their notification. they do the same things just in different ways.
+notify2 uses the notify2 library while the other file uses subprocess to send their notification. they do the same things just in different ways.
 
 if you dont want to use the papirus icons remove it from where the notification is being sent (subprocess.run[] for normal and full/low/crit_notification for notify2).
 
