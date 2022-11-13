@@ -16,8 +16,7 @@ if using notify2 version:
 
 **installation:**
 - git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
-- cp script /path/to/script
-- chmod +x /path/to/script
+- chmod +x /path/to/script # must be executable for all user for crontab to access it
 - add this to your crontab -e 
 
 **example on how my crontab -e looks:**
