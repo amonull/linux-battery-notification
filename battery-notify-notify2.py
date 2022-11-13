@@ -52,7 +52,6 @@ def main():
     if status == "Discharging":
         # full path for notify-send (/usr/bin/notify-send) is needed for crontab
         if (CRITICAL_BATTERY >= BATTERY_LEVEL) and (tmp_battery_state_status != 3):
-            # subprocess.run(["/usr/bin/notify-send", "-i", "/usr/share/icons/Papirus/16x16/status/package-remove.svg", "-t", "15000", "-u", "critical", "Critical Battery", f"Battery Level Is {BATTERY_LEVEL}%"])
             crit_notification = notify2.Notification(summary="Critical Battery", message=f"Battery Level Is {BATTERY_LEVEL}%", icon="/usr/share/icons/Papirus/16x16/status/package-remove.svg")
             crit_notification.set_urgency(notify2.URGENCY_CRITICAL)
             crit_notification.set_timeout(15000)
@@ -60,7 +59,6 @@ def main():
             opened_tmp_battery_state_status.truncate()
             opened_tmp_battery_state_status.write("3")
         if (LOW_BATTERY  >= BATTERY_LEVEL) and (tmp_battery_state_status != 2):
-            # subprocess.run(["/usr/bin/notify-send", "-i", "/usr/share/icons/Papirus/16x16/status/package-remove.svg", "-t", "15000", "-u", "normal", "Low Battery", f"Battery Level Is {BATTERY_LEVEL}%"])
             low_notification = notify2.Notification(summary="Low Battery", message=f"Battery Level Is {BATTERY_LEVEL}%", icon="/usr/share/icons/Papirus/16x16/status/package-remove.svg")
             low_notification.set_urgency(notify2.URGENCY_NORMAL)
             low_notification.set_timeout(15000)
@@ -70,7 +68,6 @@ def main():
     else:
         # i perfer continous notifications when bat is full
         if (BATTERY_LEVEL == BATTERY_MAX): #and (tmp_battery_state_status != 1):
-            # subprocess.run(["/usr/bin/notify-send", "-i", "/usr/share/icons/Papirus/16x16/status/package-install.svg", "-t", "15000", "-u", "Low", "Full Battery", f"Battery Level Is {BATTERY_LEVEL+DMG_BAT_DIFF}%"])
             full_notification = notify2.Notification(summary="Full Battery", message=f"Battery Level Is {BATTERY_LEVEL+DMG_BAT_DIFF}%", icon="/usr/share/icons/Papirus/16x16/status/package-install.svg")
             full_notification.set_urgency(notify2.URGENCY_LOW)
             full_notification.set_timeout(15000)
