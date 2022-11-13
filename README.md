@@ -1,11 +1,15 @@
 # linux-battery-notification
+if you want to change the low battery or critical battery levels LOW/CIRITICAL_BATTERY and change the 15/5 to your desired level. 
 
-this script uses rounding as it is meant to be used together with the polybar battery module, from testing before i found that my module was using rounding instead of giving exact battery levels, this can be changed by removing round() and making its variable types float or int. this is a python only script that uses notify-send to send user notifications when their battery is too low(15%) or critical(5%). it uses subprocess to use send-notify. this script also gets battery health and gets a rounded percentage of what the low, critical, full and battery level should be.
+notify2 uses the notif2 library while the other file uses subprocess to send their notification. they do the same things just in different ways.
+
+if you dont want to use the papirus icons remove it from where the notification is being sent (subprocess.run[] for normal and full/low/crit_notification for notify2).
 
 **depends:**
 - python3
 - dunst
 - cronie
+- papirus-icon-theme
 
 if using notify2 version:
 ```pip install notify2```
