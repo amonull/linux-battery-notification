@@ -7,6 +7,9 @@ this script uses rounding as it is meant to be used together with the polybar ba
 - dunst
 - cronie
 
+if using notify2 version:
+pip install notify2
+
 **installation:**
 - git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
 - cp script /path/to/script
