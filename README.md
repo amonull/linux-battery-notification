@@ -9,7 +9,7 @@ if you dont want to use the papirus icons remove it from where the notification 
 - python3
 - dunst
 - cronie
-- papirus-icon-theme
+- papirus-icon-theme (optional)
 
 if using notify2 version:
 ```pip install notify2```
