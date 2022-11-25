@@ -29,7 +29,7 @@ try:
 except ValueError:
     tmp_battery_state_status = 0
 
-if (energy_full/energy_full_design)*100 > 99:
+if float((energy_full/energy_full_design)*100) > 99:
     # int(99.9%) == 99% (can reach it) round(99.9%) == 100% (cannot reach it) 
     BATTERY_MAX = int((energy_full / energy_full_design) *100)
 else:
