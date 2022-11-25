@@ -50,7 +50,6 @@ def exit_func():
 
 def main():
     if status == "Discharging":
-        # full path for notify-send (/usr/bin/notify-send) is needed for crontab
         if (CRITICAL_BATTERY >= BATTERY_LEVEL) and (tmp_battery_state_status != 3):
             crit_notification = notify2.Notification(summary="Critical Battery", message=f"Battery Level Is {BATTERY_LEVEL}%", icon="/usr/share/icons/Papirus/16x16/status/package-remove.svg")
             crit_notification.set_urgency(notify2.URGENCY_CRITICAL)
