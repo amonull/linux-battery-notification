@@ -5,16 +5,16 @@ notify2 uses the notify2 library while the other file uses subprocess to send th
 
 if you dont want to use the papirus icons remove it from where the notification is being sent (subprocess.run[] for normal and full/low/crit_notification for notify2).
 
-**depends:**
+# depends:
 - python3
-- dunst
+- dunst/libnotify or notify2 (pip install notify2)
 - cronie
 - papirus-icon-theme (optional)
 
-if using notify2 version:
-```pip install notify2```
+# TODO:
+- add sound using sox/sox-devel
 
-**installation:**
+# installation:
 - git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
 - chmod +x /path/to/script # must be executable for all user for crontab to access it
 - add this to your crontab -e 
