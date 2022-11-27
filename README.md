@@ -13,7 +13,7 @@ if you dont want to use the papirus icons remove it from where the notification 
 
 # TODO:
 - add sound using sox/sox-devel
-
+- create another more versatile version using ```acpi | awk '{print $4}' -> get battery percent && acpi | awk '{print $3} | grep [a-zA-z] -> get status'``` and not reading files. -> should make code faster/less complicated
 # installation:
 - git clone https://github.com/amonull/linux-battery-notification.git && cd linux-battery-notification
 - chmod +x /path/to/script # must be executable for all user for crontab to access it
