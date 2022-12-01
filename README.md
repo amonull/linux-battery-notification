@@ -5,6 +5,7 @@ the beep sound working with cronie is not yet tested and may not work as expecte
 
 # depends:
 - python3
+- acpi
 - dunst (notification)
 - sox (sound/beep effect)
 - cronie
